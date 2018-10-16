@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rakib.moviewer.WatchedMoviesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.rakib.moviewer.util.GridRecyclerView
+        android:layout_margin="10dp"
+        android:id="@+id/watched_movies_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/grid_layout_animation_from_bottom"
+        />
+
+    <ProgressBar
+        android:id="@+id/watch_listed_movies_progress_bar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/no_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/no_movie_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_tv_screen" />
+        <TextView
+            android:id="@+id/no_movie_text"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_below="@id/no_movie_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_watched_movies_available"/>
+    </RelativeLayout>
+
+</FrameLayout>

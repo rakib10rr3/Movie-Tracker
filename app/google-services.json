@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "966729620557",
+    "firebase_url": "https://moviewer-16016.firebaseio.com",
+    "project_id": "moviewer-16016",
+    "storage_bucket": "moviewer-16016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966729620557:android:7907155b108443a8",
+        "android_client_info": {
+          "package_name": "com.rakib.moviewer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966729620557-reffrpdmpdd0nrsb8tcg2tp9pevaoa1d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rakib.moviewer",
+            "certificate_hash": "3a4c8fcbcf24580f15b1b6ed6517bc94894a1da9"
+          }
+        },
+        {
+          "client_id": "966729620557-s7ninv3m2pm5fi1sn9j32naau1l7ausc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4KNqPglul3yL5eWLyjflLG4ADwKDNRGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966729620557-s7ninv3m2pm5fi1sn9j32naau1l7ausc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

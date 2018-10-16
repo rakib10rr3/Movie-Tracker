@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.rakib.moviewer.ReviewActivity">
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recycler_review"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_above="@id/relativeLayout"/>
+
+    <ProgressBar
+        android:id="@+id/no_reviews_progress_bar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:indeterminateTint="@color/colorAccent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:id="@+id/no_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/no_review_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_review" />
+        <TextView
+            android:id="@+id/no_review_text"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_below="@id/no_review_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_reviews_write_your_first_review"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_text_write_your_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="@string/write_your_review" />
+
+            <Button
+                android:id="@+id/button_write"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:text="@string/write"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

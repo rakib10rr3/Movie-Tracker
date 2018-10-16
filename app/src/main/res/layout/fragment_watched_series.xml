@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rakib.moviewer.WatchedSeriesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="10dp"
+        android:id="@+id/watched_series_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/watched_series_progress_bar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/no_series"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/no_series_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_series" />
+        <TextView
+            android:id="@+id/no_series_text"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_below="@id/no_series_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_watched_series_available"/>
+    </RelativeLayout>
+
+</FrameLayout>
